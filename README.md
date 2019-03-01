@@ -1,4 +1,9 @@
-⚠️ DEPRECATED, NO LONGER MAINTAINED
+⚠️This is a fork from orginal ![ImagePicker](https://github.com/hyperoslo/ImagePicker) that aims to make this excellent Pod compatible with Swift 4.2⚠️
+
+To install this version just include this into your Podfile:
+```
+pod 'ImagePicker', :git => 'https://github.com/113408/ImagePicker', :branch => 'master'
+```
 
 ![ImagePicker](https://github.com/hyperoslo/ImagePicker/blob/master/Resources/ImagePickerPresentation.png)
 
