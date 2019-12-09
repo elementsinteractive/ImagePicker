@@ -1,5 +1,6 @@
 import AVFoundation
 import UIKit
+import CoreLocation
 
 @objc public class Configuration: NSObject {
 
@@ -43,7 +44,6 @@ import UIKit
 
   @objc public var canRotateCamera = true
   @objc public var collapseCollectionViewWhileShot = true
-  @objc public var recordLocation = true
   @objc public var allowMultiplePhotoSelection = true
   @objc public var allowVideoSelection = false
   @objc public var showsImageCountLabel = true
@@ -53,6 +53,10 @@ import UIKit
   @objc public var allowedOrientations = UIInterfaceOrientationMask.all
   @objc public var allowVolumeButtonsToTakePicture = true
   @objc public var useLowResolutionPreviewImage = false
+  @objc public var autoDismissAfterFirstSelection = false
+
+  // MARK: Camera
+  @objc public var locationTag: CLLocation?
 
   // MARK: Images
   @objc public var indicatorView: UIView = {
@@ -62,7 +66,7 @@ import UIKit
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
-
+  
   override public init() {}
 }
 

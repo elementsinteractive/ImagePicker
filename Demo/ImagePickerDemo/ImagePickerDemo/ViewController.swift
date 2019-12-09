@@ -39,8 +39,6 @@ class ViewController: UIViewController, ImagePickerDelegate {
     var config = Configuration()
     config.doneButtonTitle = "Finish"
     config.noImagesTitle = "Sorry! There are no images here!"
-    config.recordLocation = false
-    config.allowVideoSelection = true
 
     let imagePicker = ImagePickerController(configuration: config)
     imagePicker.delegate = self
